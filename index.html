@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу — Роман и Валерия</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .invitation {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            padding: 60px 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+        }
+        
+        .invitation::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid #d4af37;
+            pointer-events: none;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        
+        .text {
+            font-size: 1.3em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .date {
+            font-size: 2em;
+            color: #2c2c2c;
+            margin: 30px 0;
+            font-weight: 600;
+        }
+        
+        .names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4em;
+            color: #d4af37;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .details {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 40px;
+            line-height: 1.8;
+        }
+        
+        .location {
+            margin-top: 20px;
+            font-size: 1.3em;
+            color: #2c2c2c;
+        }
+        
+        .divider {
+            width: 100px;
+            height: 2px;
+            background: #d4af37;
+            margin: 30px auto;
+        }
+        
+        @media (max-width: 600px) {
+            .invitation {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .names {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation">
+        <h1>ДОРОГИЕ ДРУЗЬЯ!</h1>
+        
+        <p class="text">
+            Приглашаем вас на банкет,<br>
+            посвящённый нашему бракосочетанию
+        </p>
+        
+        <div class="date">24.10.2026</div>
+        
+        <div class="names">Виктор и Екатерина</div>
+        
+        <div class="divider"></div>
+        
+        <p class="text">
+            Мы будем искренне рады<br>
+            разделить этот день с вами
+        </p>
+        
+        <div class="divider"></div>
+        
+        <div class="location">
+            <strong>16:00</strong><br>
+            Курск, Сумская ул., 110
+        </div>
+    </div>
+</body>
+</html>
